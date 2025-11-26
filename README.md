@@ -18,6 +18,14 @@ conda create -f environment.yaml
 conda activate wb-mpc
 ```
 
+Or run via docker
+```bash
+docker build -f ./Dockerfile \
+  -t wb-mpc-locoman .
+docker compose -f ./compose.yaml up -d
+docker start wb-mpc-locoman
+```
+
 ## Usage
 
 Run the main script:
