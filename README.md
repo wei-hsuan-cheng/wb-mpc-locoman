@@ -86,14 +86,14 @@ For hardware deployment the shared library can be loaded with `casadi::external`
 
 If you use this code in your research, please cite our paper:
 ```bibtex
-@article{wb-mpc-locoman,
+@ARTICLE{11266934,
   author={Molnar, Lukas and Cheng, Jin and Fadini, Gabriele and Kang, Dongho and Zargarbashi, Fatemeh and Coros, Stelian},
   journal={IEEE Robotics and Automation Letters}, 
   title={Whole-Body Inverse Dynamics MPC for Legged Loco-Manipulation}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={1-8},
+  year={2026},
+  volume={11},
+  number={1},
+  pages={898-905},
   keywords={Dynamics;Robots;Robot kinematics;Manipulator dynamics;Legged locomotion;Force;Quadrupedal robots;Foot;Real-time systems;Planning;Legged Robots;Mobile Manipulation;Whole-Body Motion Planning and Control},
   doi={10.1109/LRA.2025.3636005}}
 ```
