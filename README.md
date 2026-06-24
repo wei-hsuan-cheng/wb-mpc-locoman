@@ -18,12 +18,13 @@ conda create -f environment.yaml
 conda activate wb-mpc
 ```
 
-Or run via docker
+Or run via docker (without conda, the Docker image builds Pinocchio from source with CasADi bindings enabled.)
 ```bash
 docker build -f ./Dockerfile \
+  --build-arg MAKE_JOBS=1 \
   -t wb-mpc-locoman .
-docker compose -f ./compose.yaml up -d
-docker start wb-mpc-locoman
+docker compose -f ./compose.yaml up -d --force-recreate
+docker exec -it wb-mpc-locoman bash
 ```
 
 ## Usage
